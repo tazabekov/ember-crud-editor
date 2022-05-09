@@ -1,5 +1,5 @@
 {
-  "name": "ember-crud-editor",
+  "name": "@tazabekov/ember-crud-editor",
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [],
@@ -10,6 +10,7 @@
     "doc": "doc",
     "test": "tests"
   },
+  "private": true,
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
