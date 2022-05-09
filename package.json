@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [],
-  "repository": "",
+  "repository": "https://github.com/tazabekov/ember-crud-editor",
   "license": "MIT",
   "author": "",
   "directories": {
