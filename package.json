@@ -5,14 +5,14 @@
   "keywords": [],
   "repository": "https://github.com/tazabekov/ember-crud-editor",
   "license": "MIT",
-  "author": "",
+  "author": "Gizzat Tazabekov",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "scripts": {
     "build": "ember build --environment=production",
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel 'lint:!(fix)'",
     "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
     "lint:hbs": "ember-template-lint .",
     "lint:hbs:fix": "ember-template-lint . --fix",
@@ -36,7 +36,7 @@
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.4.1",
-    "ember-cli": "~4.3.0",
+    "ember-cli": "^3.12.1",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
@@ -47,6 +47,7 @@
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^5.1.5",
     "ember-resolver": "^8.0.3",
+    "ember-set-helper": "^2.0.1",
     "ember-source": "~4.3.0",
     "ember-source-channel-url": "^3.0.0",
     "ember-template-lint": "^4.3.0",
@@ -62,6 +63,7 @@
     "prettier": "^2.6.1",
     "qunit": "^2.18.0",
     "qunit-dom": "^2.0.0",
+    "release-it": "^15.0.0",
     "webpack": "^5.70.0"
   },
   "engines": {
@@ -75,5 +77,14 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
+  },
+  "release-it": {
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    }
   }
 }
